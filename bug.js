@@ -1,0 +1,1 @@
+function foo(a,b){    if (a === 0) {        return b;    } else if (b === 0) {        return a;    } else {        return foo(a-1, b-1);    } }console.log(foo(0,0)); //Expected: 0, Actual: Stack overflow because it never reaches the base case when a and b are both 0. 
