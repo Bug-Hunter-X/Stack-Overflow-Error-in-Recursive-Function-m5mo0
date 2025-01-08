@@ -1,0 +1,1 @@
+function foo(a,b){    if (a === 0 && b === 0) {        return 0;    } else if (a === 0) {        return b;    } else if (b === 0) {        return a;    } else {        return foo(a-1, b-1);    } }console.log(foo(0,0)); // Expected: 0, Actual: 0
